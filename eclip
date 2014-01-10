@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?artifactRepository version='1.1.0'?>
+
+-<repository version="1" type="org.eclipse.equinox.p2.artifact.repository.simpleRepository" name="download cache">
+
+
+-<properties size="2">
+
+<property name="p2.system" value="true"/>
+
+<property name="p2.timestamp" value="1384050125717"/>
+
+</properties>
+
+
+-<mappings size="3">
+
+<rule output="${repoUrl}/plugins/${id}_${version}.jar" filter="(& (classifier=osgi.bundle))"/>
+
+<rule output="${repoUrl}/binary/${id}_${version}" filter="(& (classifier=binary))"/>
+
+<rule output="${repoUrl}/features/${id}_${version}.jar" filter="(& (classifier=org.eclipse.update.feature))"/>
+
+</mappings>
+
+<artifacts size="0"/>
+
+</repository>
